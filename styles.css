@@ -105,7 +105,6 @@ header span.lastName {
     height:100vh;
     min-height:500px;
     max-height:1080px;
-    background:url(../images/lead-bg.jpg);
     background-size:cover;
     overflow:hidden;
     padding:15px;
@@ -159,7 +158,7 @@ header span.lastName {
       rgba(0, 0, 0, 0.3)
     ),
     /* url("https://images.pexels.com/photos/160822/yoschi-fig-funny-colorful-160822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-    url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("./images/raindrop.jpeg");
     background-size: cover;
     z-index:1;
     }
