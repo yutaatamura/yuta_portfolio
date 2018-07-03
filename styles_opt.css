@@ -1,9 +1,10 @@
-header {
+    header {
     position:absolute;
     top:0;
     left:0;
     right:0;
     text-align:center;
+    background: #1B242F;
     z-index:10;
     animation-name:dropHeader;
     animation-iteration-count:1;
@@ -91,7 +92,8 @@ header {
     }
     
     .navbar {
-    background-color:rgba(0,0,0,0);
+    background-color:rgb(2, 57, 65);
+    height: 80px;
     }
     
     #left-navbar {
@@ -198,7 +200,6 @@ header {
     .aboutPic img {
     max-width:100%;
     height:auto;
-    border-radius:25px;
     }
     
     .aboutText {
@@ -261,7 +262,7 @@ header {
     content:'';
     width:3px;
     height:40px;
-    background:linear-gradient(tobottom,#3498db,rgba(52,152,219,0));
+    background:linear-gradient(to bottom,#3498db,rgba(52,152,219,0));
     top:100%;
     left:314px;
     }
@@ -349,10 +350,12 @@ header {
     }
     
     .project {
-    border-radius:30px;
     height:300px;
     width:390px;
-    padding:15px;
+    }
+
+    #portfolio-grid > div > .col-md-6 {
+        padding:0!important;
     }
     
     .description {
@@ -406,7 +409,8 @@ header {
     position:relative;
     text-align:center;
     cursor:default;
-    background:#FFF;
+    background: #3498db;
+    /* background:#FFF; */
     }
     
     .hovereffect .overlay {
@@ -415,7 +419,7 @@ header {
     position:absolute;
     overflow:hidden;
     top:0;
-    66left:0;
+    left:0;
     padding:50px 20px;
     }
     
@@ -457,7 +461,8 @@ header {
     left:0;
     width:100%;
     height:2px;
-    background:#3498db;
+    /* background:#3498db; */
+    background:#fff;
     content:'';
     -webkit-transition:0 .35s;
     transition:transform .35s;
@@ -488,6 +493,7 @@ header {
     .hovereffect p {
     font-weight:700;
     font-size:18px;
+    color:#fff;
     }
     
     .hovereffect:hover a,.hovereffect:hover p {
