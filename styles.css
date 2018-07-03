@@ -402,7 +402,7 @@ header span.lastName {
         .project {
             border-radius: 30px;
             padding: 15px;
-           
+            height: 325px;
         }
 
         .description {
@@ -458,9 +458,7 @@ header span.lastName {
         position: relative;
         text-align: center;
         cursor: default;
-        /* background: #42b078; */
-        background:white;
-        margin-bottom:10px;
+        background: white;
       }
       
       .hovereffect .overlay {
@@ -468,7 +466,7 @@ header span.lastName {
         height: 100%;
         position: absolute;
         overflow: hidden;
-        top: 0;
+        top: 0;66   
         left: 0;
         padding: 50px 20px;
       }
@@ -487,13 +485,16 @@ header span.lastName {
       }
       
       .hovereffect:hover img {
-        opacity: 0.4;
+        opacity: 0.1;
         filter: alpha(opacity=40);
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
       }
       
       .hovereffect h2 {
+        color: black;
+        font-weight:bold;
+        font-size: 16px;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
@@ -510,7 +511,7 @@ header span.lastName {
         left: 0;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #3498db;
         content: '';
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
@@ -523,14 +524,25 @@ header span.lastName {
         transform: translate3d(0,0,0);
       }
       
-      .hovereffect a, .hovereffect p {
-        color: #FFF;
+      .hovereffect a, .hovereffect p {    
         opacity: 0;
         filter: alpha(opacity=0);
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, transform 0.35s;
         -webkit-transform: translate3d(100%,0,0);
         transform: translate3d(100%,0,0);
+      }
+
+      .hovereffect a {
+        line-height: 15;
+        border: solid red 2px;
+        padding: 10px;
+
+      }
+
+      .hovereffect p {
+          font-weight: bold;
+          font-size: 18px;
       }
       
       .hovereffect:hover a, .hovereffect:hover p {
