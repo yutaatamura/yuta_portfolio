@@ -7,10 +7,12 @@
   <meta name="theme-color" content="#000000">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="./styles_opt.css"> 
   <link rel="stylesheet" href="./animate.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  
   <script src="./wow.min.js"></script>
   <title>Yuta Tamura</title>
 </head>
@@ -74,9 +76,9 @@
     
     <div id="tagline">
         <div id="taglineWrapper">
-            Hi, my name is Yuta. I create <strong>clean</strong> &  <strong>functional</strong> websites.
+            Hi, my name is Yuta. I create <span>clean</span> &  <span>functional</span> websites.
             <br>
-            Let's build something <strong>special</strong>.  
+            Let's build something <span>special</span>.  
         </div>
     </div>
 
@@ -136,8 +138,11 @@
             
                 <h3>I enjoy working with</h3>
                 <br>
-                <div class="frontEnd row">
-                    <h3>Front-End</h3>
+                <div>
+                <h3 class="skillsHead">Front-End</h3>
+                </div>
+                <div class="frontEnd row skillsRow">
+                    <div class="col-md-12">
                         <div class="html">
                             <img class="skills-img img-fluid mx-auto d-block" src="./images/html.jpg">
                             <p>HTML</p>
@@ -158,9 +163,11 @@
                             <img class="skills-img img-fluid mx-auto d-block" src="./images/reactimg.png">
                             <p>React</p>
                         </div>
+                    </div>
                 </div>
-                <div class="backEnd row">
-                    <h3>Back-End</h3>
+                <h3 class="skillsHead">Back-End</h3>
+                <div class="backEnd row skillsRow">
+                    <div class="col-md-12">
                         <div class="node">
                                 <img class="skills-img img-fluid mx-auto d-block" src="./images/nodejs.png">
                                 <p>Node</p>
@@ -178,107 +185,84 @@
                                 <p>ExpressJS</p>
                         </div>
                 </div>
-            
+            </div>
         </div>  
     </div>
     <!-- End of #skills -->
 
     <div id="portfolio">
         <h1 class="headings">Portfolio</h1>
-        <hr>
         <div id="portfolio-grid">
             <div class="row">
-                <div class="col-md-6 hovereffect">
-                    <img class="project img-fluid" src="./images/projects/yaatra.png" alt="">
-                    <div class="overlay">
-                        <p>Yaatra</p>
-                        <h2></h2>
-                        <p>
-                            <a href="https://travelappjustdoit.herokuapp.com/" target="_blank">LEARN MORE</a>
-                        </p>
+                <div class="col-md-6">
+                    <div class="hovereffect">
+                        <img class="project img-fluid img-thumbnail" src="./images/projects/yaatra.png" alt="">
+                        <div class="overlay">
+                            <p>Yaatra</p>
+                            <h2></h2>
+                            <p>
+                            <a href="https://travelappjustdoit.herokuapp.com/" class="projectLink" target="_blank">LEARN MORE</a>
+                            </p>
+                    </div>
                     </div>
                 </div>
-                <div class="col-md-6 hovereffect">
-                    <img class="project img-fluid" src="./images/newspaper.jpg" alt="">
+                <div class="col-md-6">
+                    <div class="hovereffect">
+                    <img class="project img-fluid img-thumbnail" src="./images/newspaper.jpg" alt="">
                     <div class="overlay">
                         <p>NYT Article Search</p>
                         <h2></h2>
                         <p>
-                            <a href="https://yuta-nyt-reactapp.herokuapp.com/" target="_blank">LEARN MORE</a>
+                            <a href="https://yuta-nyt-reactapp.herokuapp.com/" class="projectLink" target="_blank">LEARN MORE</a>
                         </p>
+                    </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 hovereffect">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
-                    <div class="overlay">
-                        <p>Effect 12</p>
-                        <p>
-                            <a href="#">LINK HERE</a>
-                        </p>
-                    </div>
-                </div> -->
             </div>
+            
             <div class="row">
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid" src="./images/projects/newsscraper.png" alt="">
+                            <img class="project img-fluid img-thumbnail" src="./images/projects/newsscraper.png" alt="">
                             <div class="overlay">
                                 <p>NYT Scraper</p>
                                 <h2></h2>
                                 <p>
-                                    <a href="https://github.com/yutaatamura/mongooseandcheerios.git" target="_blank">LEARN MORE</a>
+                                    <a href="https://github.com/yutaatamura/mongooseandcheerios.git" class="projectLink"  target="_blank">LEARN MORE</a>
                                 </p>
                             </div>
                     </div>
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid" src="./images/projects/goodtimesmoviesearch.png" alt="">
+                            <img class="project img-fluid img-thumbnail" src="./images/projects/goodtimesmoviesearch.png" alt="">
                             <div class="overlay">
                                 <p>Good Times Movie Search</p>
                                 <h2></h2>
                                 <p>
-                                    <a href="#" target="_blank">LEARN MORE</a>
+                                    <a href="https://midstreamer.github.io/GoodTimesContentSourcer/" class="projectLink" target="_blank">LEARN MORE</a>
                                 </p>
                             </div>
                     </div>
-                    <!-- <div class="col-md-4 project1 hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/300x200" alt="">
-                            <div class="overlay">
-                                <p>Effect 12</p>
-                                <p>
-                                    <a href="#">LINK HERE</a>
-                                </p>
-                            </div>
-                    </div> -->
             </div>
             <div class="row">
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid" src="./images/projects/clickgame.png" alt="">
+                            <img class="project img-fluid img-thumbnail" src="./images/projects/clickgame.png" alt="">
                             <div class="overlay">
                                 <p>Click Game</p>
                                 <h2></h2>
                                 <p>
-                                    <a href="https://yutaatamura.github.io/react_memory_game/" target="_blank">LEARN MORE</a>
+                                    <a href="https://yutaatamura.github.io/react_memory_game/" class="projectLink" target="_blank">LEARN MORE</a>
                                 </p>
                             </div>
                     </div>
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid" src="./images/projects/friendfinder.png" alt="">
+                            <img class="project img-fluid img-thumbnail" src="./images/projects/friendfinder.png" alt="">
                             <div class="overlay">
                                 <p>Friend Finder</p>
                                 <h2></h2>
                                 <p>
-                                    <a href="https://yuta-friendfinder.herokuapp.com/" target="_blank">LEARN MORE</a>
+                                    <a href="https://yuta-friendfinder.herokuapp.com/" class="projectLink" target="_blank">LEARN MORE</a>
                                 </p>
                             </div>
                     </div>
-                    <!-- <div class="col-md-4 project1 hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/300x200" alt="">
-                            <div class="overlay">
-                                <p>Effect 12</p>
-                                <p>
-                                    <a href="#">LINK HERE</a>
-                                </p>
-                            </div>
-                    </div> -->
             </div>
         </div>
         <!-- End of #portfolio-grid -->
