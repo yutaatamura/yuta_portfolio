@@ -19,47 +19,41 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <ul id="left-navbar" class="navbar">
-                <li>
-                    <a href="#">
-                        <img id="logo" src="./images/logo_white_circle.png" align="left" alt="  ">
-                        <!-- <i class="fas fa-2x faa-vertical fa-chess-pawn"></i> -->
-                    </a>
-                </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <ul id="left-navbar" class="navbar mr-auto">
                 <li class="name">
                     <span class="firstName">yuta</span><span class="lastName">tamura</span>
                 </li>
             </ul>
-            <ul id="right-menu" class="shadow navbar">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <!-- <li>
-                    <a href="#">Experience</a>
-                </li>
-                <li>
-                    <a href="#">Education</a>
-                </li> -->
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="right-menu" class="navbar-nav shadow navbar ml-auto">
+                    <li class="nav-item active">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-- End of Header -->
 
     <div id="namePlate" class="module">
         <div id="namePlate-content" class="test">
-            <h1>Yuta Tamura</h1>
+            <h1><span id="firstName">Yuta</span><span id="lastName">Tamura</span></h1>
             <h2>Fullstack Web Developer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <a href="#" id="resumeLink" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End of #namePlate-Content -->
 
@@ -76,7 +70,7 @@
     
     <div id="tagline">
         <div id="taglineWrapper">
-            Hi, my name is Yuta. I create <span>clean</span> &  <span>functional</span> websites.
+            Hi, my name is <span>Yuta</span>. I create <span>clean</span> &  <span>functional</span> websites.
             <br>
             Let's build something <span>special</span>.  
         </div>
@@ -84,46 +78,64 @@
 
     <div class="description">
         <div class="descrWrapper row">
-            <div class="descrBlock col-md-4">
+            <div class="descrBlock col-xs-12 col-sm-12 col-md-4">
                 <div class="chessPiece">
                     <img src="./images/blackKnight.png"> 
                 </div>
                 <div class="descrTitle">WEBSITE DESIGN</div>
                 <div class="divide"></div>
-                <div class="descrSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. </div>
+                <div class="descrSummary">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. 
+                    </p>
+                </div>
             </div>
-            <div class="descrBlock col-md-4">
+            <div class="descrBlock col-xs-12 col-sm-12 col-md-4">
                     <div class="chessPiece">
                         <img src="./images/whiteQueen.png"> 
                     </div>
                     <div class="descrTitle">Front-End</div>
                     <div class="divide"></div>
-                    <div class="descrSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. </div>
+                    <div class="descrSummary">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. 
+                        </p>
+                    </div>
             </div>
-            <div class="descrBlock col-md-4">
+            <div class="descrBlock col-xs-12 col-sm-12 col-md-4">
                     <div class="chessPiece">
                         <img src="./images/blackRook.png"> 
                     </div>
                     <div class="descrTitle">Back-End</div>
                     <div class="divide"></div>
-                    <div class="descrSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. </div>
+                    <div class="descrSummary">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna.
+                        </p> 
+                    </div>
             </div>
         </div>
     </div>
 
     <div id="about">
-        <div class="container">
-            <div class="row aboutRow">
-                <div class="col-md-6 aboutPic">
-                    <img class="img-fluid mx-auto d-block" src="./images/computer.jpg">
-                </div>
-
-                <div id="aboutSection" class="col-md-6">
-                    <h2 class="headings" style="margin-top: 30px;">About Me</h2>
-                    
+        <div class="row">
+            <div class="col-md-12 aboutPic">
+                <img class="img-fluid img-responsive d-block" src="./images/profile.jpg">
+            </div>
+        </div>
+        <div class="row aboutHeaderRow">
+            <div class="col-md-12">
+                <h2 class="headings" style="margin-top: 30px;">About Me</h2>
+            </div>
+        </div>
+        <div class="container aboutWrapper">  
+            <div class="row">
+                <div id="aboutSection" class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. 
+                        Colorado born, dance-driven technology enthusiast. I am a Full Stack Web Developer focused on writing clean,efficient, and beautiful code. I have a passion for developing user-friendly and functional applications.
+                        <br> 
+                        <br>
+                        My professional path initially began as a chemical engineer at a large PVC manufacturing plant, but my love for technology and computers finally won out my desire to pursue truly meaningful work that has the potential to make a real difference in the world. I thrive in detail-oriented problem solving environments and never cease to engage my passion in helping others and tackling complex problems. 
                     </p>
                 </div>
                 <!-- End of #aboutSection -->
@@ -139,37 +151,47 @@
                 <h3>I enjoy working with</h3>
                 <br>
                 <div>
-                <h3 class="skillsHead">Front-End</h3>
+                
                 </div>
                 <div class="frontEnd row skillsRow">
                     <div class="col-md-12">
+                        <h3 class="skillsHead">Front-End</h3>
                         <div class="html">
-                            <img class="skills-img img-fluid mx-auto d-block" src="./images/html.jpg">
+                            <img class="skills-img img-fluid mx-auto d-block" src="./images/html.png">
                             <p>HTML</p>
                         </div>
                         <div class="css">
-                            <img class="skills-img img-fluid mx-auto d-block" src="./images/css.jpg">
+                            <img class="skills-img img-fluid mx-auto d-block" src="./images/css3.png">
                             <p>CSS</p>
                         </div>
                         <div class="js">
-                            <img class="skills-img img-fluid mx-auto d-block" src="./images/js.jpg">
+                            <img class="skills-img img-fluid mx-auto d-block" src="./images/jslogo.png">
                             <p>JavaScript</p>
                         </div>
                         <div class="jquery">
                             <img class="skills-img img-fluid mx-auto d-block" src="./images/jquery.png">
                             <p>jQuery</p>
                         </div>
-                        <div class="jquery">
+                        <div class="react">
                             <img class="skills-img img-fluid mx-auto d-block" src="./images/reactimg.png">
                             <p>React</p>
                         </div>
+                        <div class="bootstrap">
+                            <img class="skills-img img-fluid mx-auto d-block" src="./images/bootstrap.png">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="materialize">
+                            <img class="skills-img img-fluid mx-auto d-block" src="./images/materialize.png">
+                            <p>Materialize</p>
+                        </div>
                     </div>
                 </div>
-                <h3 class="skillsHead">Back-End</h3>
+                
                 <div class="backEnd row skillsRow">
                     <div class="col-md-12">
+                        <h3 class="skillsHead">Back-End</h3>
                         <div class="node">
-                                <img class="skills-img img-fluid mx-auto d-block" src="https://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg">
+                                <img class="skills-img img-fluid mx-auto d-block" src="./images/nodejsLogo.png">
                                 <p>Node</p>
                                 <!-- src="./images/nodejs.png" -->
                         </div>
@@ -179,7 +201,7 @@
                                 <!-- src="./images/mongodb.png" -->
                         </div>
                         <div class="mysql">
-                                <img class="skills-img img-fluid mx-auto d-block" src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2017/09/mysql.jpg">
+                                <img class="skills-img img-fluid mx-auto d-block" src="./images/mysqlLogo.png">
                                 <p>MySQL</p>
                                 <!-- src="./images/mysql.png"  -->
                         </div>

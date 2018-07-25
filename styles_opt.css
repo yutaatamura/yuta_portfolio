@@ -1,3 +1,4 @@
+
     header {
     position:absolute;
     top:0;
@@ -75,6 +76,11 @@
         width: 50px;
         height: 50px;
     }
+
+    .myLogo {
+        position: relative;
+        left: 18px;
+    }
     
     .headings {
     text-align:center;
@@ -135,17 +141,29 @@
     
     #namePlate-content h1,#namePlate-content h2 {
     margin:0;
+    font-family: 'Raleway', sans-serif;
     }
     
-    #namePlate-content h1 {
+    #firstName{
     color:#fff;
     text-shadow:1px 1px 0 #FFF;
     font-weight:900;
-    font-size:5em;
+    font-size:2.0em;
     text-transform:uppercase;
-    letter-spacing:.05em;
+    /* letter-spacing:.05em; */
     line-height:.9em;
+    margin-right:15px;
     }
+
+    #lastName {
+    color:#fff;
+    text-shadow:1px 1px 0 #FFF;
+    font-weight:1!important;
+    font-size:2.0em;
+    text-transform:uppercase;
+    line-height:.9em;
+    }   
+    
     
     #namePlate-content h2 {
     color:#38b0ff;
@@ -162,7 +180,8 @@
     right:0;
     bottom:0;
     left:0;
-    background-image:linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./images/raindrop.jpeg");
+    /* background-image:linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./images/raindrop.jpeg"); */
+    background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Background-4.jpg");
     background-size:cover;
     z-index:1;
     }
@@ -194,22 +213,30 @@
     animation-iteration-count:infinite;
     padding-top:5px;
     }
+
+    #resumeLink {
+    font-family:'Raleway', sans-serif
+    }
     
+    .aboutHeaderRow {
+        text-align: center;
+    }
+
     #about {
-    background-color:#DEDECD;
     margin-top:25px;
     }
     
     .aboutPic {
-    width:100%;
-    background-position:center center;
-    background-size:contain;
-    vertical-align:middle;
+    width:50%;
+    margin:auto;
+    
     }
     
     .aboutPic img {
-    max-width:100%;
-    height:auto;
+    border-radius: 50%;
+    max-width: 25%;
+    margin: auto;
+    border: 2px solid rgb(44,44,44);
     }
     
     .aboutText {
@@ -224,7 +251,7 @@
     
     #tagline {
     width:100%;
-    height:265px;
+    height:100%;
     background-color:#DEDECD;
     border-top:1px solid #F4F5EE;
     padding:77px 0 107px;
@@ -283,10 +310,22 @@
     }
     
     #aboutSection {
+    color:#666;    
     text-align:center;
+    font-size:1.25rem;
+    font-weight:300;
+    line-height:1.5;
+    margin:0 auto;
     width:500px;
     vertical-align:middle;
     font-family: 'Raleway', sans-serif;
+    /* outline: 2px solid #00B9AE; */
+    outline: 2px solid rgba(25,121,145,0.5);
+    padding:20px;
+    }
+
+    #aboutSection p {
+        text-align: left;
     }
     
     #education {
@@ -341,6 +380,22 @@
     font-weight:300;
     color:#374054;
     }
+
+    #skills {   
+    background-size:contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    }
+
+    #skills-block {
+    font-family: 'Raleway', sans-serif;
+    }
+    
+    .skillsRow {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    margin-bottom:50px;
+    }
     
     .skillsRow div {
     display:inline-block;
@@ -349,8 +404,11 @@
     }
 
     .skillsHead {
-    text-decoration:underline;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
     margin-top:10px;
+    font-family: 'Raleway', sans-serif;
     }
     
     .skills-img {
@@ -366,6 +424,7 @@
     }
     
     #portfolio {
+    background-color:#DEDECD;
     text-align:center;
     border-bottom:1px solid #dcd9d9;
     padding:50px 20%;
@@ -387,7 +446,7 @@
     }
     
     .description {
-    height:325px;
+    height:100%;
     }
     
     .descrBlock {
@@ -423,6 +482,7 @@
     .descrSummary {
     margin-top:30px;
     font-family: 'Raleway', sans-serif;
+    height: 100%;
     }
     
     .divide {
@@ -590,3 +650,13 @@
     .degree,.aboutDegree {
     font-size:1rem;
     }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+    .descrBlock {
+        line-height: initial;
+        margin-top: 10px;
+        padding: 0 20% 0 20%;
+    }
+        }
+    
