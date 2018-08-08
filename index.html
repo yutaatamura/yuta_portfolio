@@ -110,7 +110,7 @@
                     <div class="divide"></div>
                     <div class="descrSummary">
                         <p>
-                            I prioritize on building efficient back-end systems that deliver on superior reliability and dependable accessibility. 
+                            I prioritize building efficient back-end systems that deliver on superior reliability and dependable accessibility. 
                         </p> 
                     </div>
             </div>
@@ -145,10 +145,10 @@
     <!-- End of #about -->
             
     <div id="skills">
-        <h2 class="headings">Skills</h2>
+        <h2 class="headings gray-font skillsHeader">Skills</h2>
         <div id="skills-block" class="container">
             
-                <h3>I enjoy working with</h3>
+                <h3 class="gray-font">I enjoy working with</h3>
                 <br>
                 <div>
                 
@@ -219,36 +219,101 @@
     <div id="portfolio">
         <h1 class="headings">Portfolio</h1>
         <div id="portfolio-grid">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row project-row">
+                <div class="col-md-6 project-image">
                     <div class="hovereffect">
-                        <img class="project img-fluid img-thumbnail" src="./images/projects/yaatra.png" alt="">
+                        <img class="project img-fluid" src="./images/projects/yaatra.png" alt="">
                         <div class="overlay">
-                            <p>Yaatra</p>
-                            <h2></h2>
-                            <p>
-                            <a href="https://travelappjustdoit.herokuapp.com/" class="projectLink" target="_blank">LEARN MORE</a>
-                            </p>
-                    </div>
+                            <div class="overlay-body">
+                                <p>Yaatra</p>
+                                <h2></h2>
+                                <p class="link-wrap">
+                                <a href="https://travelappjustdoit.herokuapp.com/" class="projectLink" target="_blank">Visit Website</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="hovereffect">
-                    <img class="project img-fluid img-thumbnail" src="./images/newspaper.jpg" alt="">
-                    <div class="overlay">
-                        <p>NYT Article Search</p>
-                        <h2></h2>
-                        <p>
-                            <a href="https://yuta-nyt-reactapp.herokuapp.com/" class="projectLink" target="_blank">LEARN MORE</a>
-                        </p>
-                    </div>
+                <div class="col-md-6 project-summary">
+                    <div class="container text-center mt-2">
+                        <div class="d-flex h-400">
+                            <div class="text-left">
+                                <h4 class="project-heading">Yaatra</h4>
+                                <hr>
+                                <p class="project-body">A travel-based social media application for sharing travel experiences via personal blogs while fostering new connections with other travellers based on similar travel destinations.</p>
+                                <br>
+                                <p class="project-body">Made with Materialize, MySQL, PassportJS, and Handlebars.</p>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
+            <br>
+            <div class="row project-row">
+                    <div class="col-md-6">
+                        <div class="hovereffect">
+                            <img class="project img-fluid" src="./images/projects/moneyTree.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-body">
+                                    <p>Money Tree</p>
+                                    <h2></h2>
+                                    <p class="link-wrap">
+                                    <a href="https://travelappjustdoit.herokuapp.com/" class="projectLink" target="_blank">Visit Website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 project-summary">
+                        <div class="container text-center mt-2">
+                            <div class="d-flex h-100">
+                                <div class="text-left">
+                                    <h4 class="project-heading">Money Trees</h4>
+                                    <hr>
+                                    <p class="project-body">A financial web application for tracking expenditures and developing healthy financial habits by utilizing gamification and comparative analysis/forecasting principles.</p>
+                                    <br>
+                                    <p class="project-body">Made with React, MongoDB, Plaid, and React Strap.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <br>
+            <div class="row project-row">
+                    <div class="col-md-6">
+                        <div class="hovereffect">
+                            <img class="project img-fluid" src="./images/projects/goodtimesmoviesearch.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-body">
+                                    <p>Good Times Movie Search</p>
+                                    <h2></h2>
+                                    <p class="link-wrap">
+                                    <a href="https://travelappjustdoit.herokuapp.com/" class="projectLink" target="_blank">Visit Website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 project-summary">
+                        <div class="container text-center mt-2">
+                            <div class="d-flex h-100">
+                                <div class="text-left">
+                                    <h4 class="project-heading">Good Times Movie Search</h4>
+                                    <hr>
+                                    <p class="project-body">An entertainment media aggregator for your one-stop discovery of the latest and most relevant content catered to your interests.</p>
+                                    <br>
+                                    <p class="project-body">Made with Materialize and FirebaseDB. Utilizes the NYT and TMDb APIs.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- <div class="row">
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid img-thumbnail" src="./images/projects/newsscraper.png" alt="">
+                            <img class="project img-fluid" src="./images/projects/newsscraper.png" alt="">
                             <div class="overlay">
                                 <p>NYT Scraper</p>
                                 <h2></h2>
@@ -258,7 +323,7 @@
                             </div>
                     </div>
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid img-thumbnail" src="./images/projects/goodtimesmoviesearch.png" alt="">
+                            <img class="project img-fluid" src="./images/projects/goodtimesmoviesearch.png" alt="">
                             <div class="overlay">
                                 <p>Good Times Movie Search</p>
                                 <h2></h2>
@@ -270,7 +335,7 @@
             </div>
             <div class="row">
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid img-thumbnail" src="./images/projects/clickgame.png" alt="">
+                            <img class="project img-fluid" src="./images/projects/clickgame.png" alt="">
                             <div class="overlay">
                                 <p>Click Game</p>
                                 <h2></h2>
@@ -280,7 +345,7 @@
                             </div>
                     </div>
                     <div class="col-md-6 hovereffect">
-                            <img class="project img-fluid img-thumbnail" src="./images/projects/friendfinder.jpeg" alt="">
+                            <img class="project img-fluid" src="./images/projects/friendfinder.jpeg" alt="">
                             <div class="overlay">
                                 <p>Friend Finder</p>
                                 <h2></h2>
@@ -289,7 +354,7 @@
                                 </p>
                             </div>
                     </div>
-            </div>
+            </div> -->
         </div>
         <!-- End of #portfolio-grid -->
     </div>

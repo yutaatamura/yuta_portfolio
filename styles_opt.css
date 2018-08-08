@@ -87,7 +87,7 @@
     position:relative;
     display:inline-block;
     font-size:2em;
-    font-weight:300;
+    font-weight:bold;
     margin:0 0 30px;
     font-family: 'Raleway', sans-serif;
     }
@@ -310,6 +310,7 @@
     }
     
     #aboutSection {
+    background-color:#f8f8f8;
     color:#666;    
     text-align:center;
     font-size:1.25rem;
@@ -381,11 +382,20 @@
     color:#374054;
     }
 
-    #skills {   
+    #skills {
+    margin-top:-90px;
+    background-color:rgb(25, 121, 145);  
     background-size:contain;
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #fff;
+    }
+
+    .skillsHeader {
+        margin-top:100px;
+    }
+
+    .gray-font {
+    color:#f1e9e9;
     }
 
     #skills-block {
@@ -393,6 +403,7 @@
     }
 
     .skillsRow {
+    border-radius:6px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     margin-bottom:50px;
     }
@@ -423,15 +434,37 @@
     transition-duration:.1s;
     }
     
+    .frontEnd {
+    background-color:#f8f8f8;
+    }
+
+    .backEnd {
+    background-color:#f8f8f8;
+    }
+
     #portfolio {
-    background-color:#DEDECD;
+    background-color:#f8f8f8;
     text-align:center;
     border-bottom:1px solid #dcd9d9;
-    padding:50px 20%;
+    padding:6%;
+    font-family: 'Raleway', sans-serif;
     }
-    
+
     .project {
-    height:300px;
+    border-radius: 6px;
+    height:100%;
+    }
+
+    .project-heading {
+    font-size: 30px;
+    }
+
+    .project-body {
+    font-size: 18px;
+    }
+
+    .project-row {
+    margin-bottom: 30px;
     }
 
     .projectLink:hover {
@@ -439,6 +472,10 @@
     color:#FFF;
     transition: all 0.3s ease-in-out;
     text-decoration:none;
+    }
+
+    #portfolio-grid {
+    margin-top: 30px;
     }
 
     #portfolio-grid > div > .col-md-6 {
@@ -451,6 +488,7 @@
 
     .descrWrapper {
         padding: 0 10px;
+        background-color:#f8f8f8;
     }
     
     .descrBlock {
@@ -461,7 +499,7 @@
     }
     
     .chessPiece {
-    background-color:#FFF;
+    background-color:#f8f8f8;
     width:112px;
     height:96px;
     text-align:center;
@@ -503,7 +541,7 @@
     position: relative;
     text-align: center;
     cursor: default;
-    background:  #DEDECD;
+    background:  rgba(25, 121, 145);
     }
     
     .hovereffect .overlay {
@@ -513,7 +551,11 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 50px 20px;
+    }
+
+    .overlay-body {
+    position: relative;
+    height:100%;
     }
     
     .hovereffect img {
@@ -578,16 +620,24 @@
 
     .hovereffect a {
         border:solid red 2px;
-        line-height: 12;
         padding: 10px;
         font-family: 'Raleway', sans-serif;
     }
 
     .hovereffect p {
         font-weight: 800;
-        font-size: 20px;
-        color:rgb(0, 0, 0);
+        font-size: 26px;
+        color:#fff;
         font-family: 'Raleway', sans-serif;
+    }
+
+    .link-wrap {
+        position:absolute;
+        bottom:50%;
+        right:0;
+        left:0;
+        top:50%;
+        display:block;
     }
     
     .hovereffect:hover a, .hovereffect:hover p {
