@@ -126,7 +126,10 @@
     height:100vh;
     min-height:500px;
     max-height:1080px;
+    background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("./images/chessboard.jpg");
     background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
     overflow:hidden;
     padding:15px;
     }
@@ -137,6 +140,7 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     text-align:center;
     }
     
@@ -146,6 +150,7 @@
     }
     
     #firstName {
+    display:inline-block;
     color:#fff;
     text-shadow:1px 1px 0 #FFF;
     font-weight:900;
@@ -156,6 +161,7 @@
     }
 
     #lastName {
+    display:inline-block;
     color:#fff;
     text-shadow:1px 1px 0 #FFF;
     font-weight:1!important;
@@ -169,49 +175,6 @@
     font-weight:500;
     font-size:2.25em;
     margin-bottom:15px;
-    }
-    
-    #namePlate-overlay {
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    /* background-image:linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./images/raindrop.jpeg"); */
-    /* background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("./images/railroad.jpg"); */
-    background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("./images/chessboard.jpg");
-    background-size:cover;
-    z-index:1;
-    }
-    
-    #namePlate-scrollDown {
-    position:absolute;
-    left:0;
-    right:0;
-    width:100%;
-    text-align:center;
-    z-index:10;
-    bottom:15px;
-    color:#fff;
-    }
-    
-    #namePlate-scrollDown span {
-    cursor:pointer;
-    display:block;
-    width:35px;
-    height:35px;
-    border-radius:50%;
-    border:3px solid #a0cfee;
-    text-align:center;
-    margin:0 auto;
-    }
-    
-    #namePlate-scrollDown i {
-    animation:pulsate 1.5s ease;
-    animation-iteration-count:infinite;
-    padding-top:5px;
     }
 
     #resumeLink {
