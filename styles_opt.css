@@ -233,7 +233,6 @@
     
     .aboutPic img {
     border-radius:50%;
-    max-width:25%;
     border:2px solid rgb(44,44,44);
     margin:auto;
     }
@@ -704,7 +703,7 @@
     font-size:1rem;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 640px) and (min-width: 320px){
         /* For mobile phones: */
     .descrBlock {
     line-height:initial;
