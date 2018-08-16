@@ -123,8 +123,6 @@
     #namePlate {
     position:relative;
     height:100vh;
-    min-height:500px;
-    max-height:1080px;
     background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("./images/chessboard.jpg");
     background-size:cover;
     background-position:center;
