@@ -154,7 +154,7 @@ header span.lastName {
 #firstName {
   display: inline-block;
   color: #fff;
-  text-shadow: 1px 1px 0 #38b0ff;
+  text-shadow: 1px 1px 0 #000000;
   font-weight: 900;
   font-size: 2em;
   text-transform: uppercase;
@@ -163,9 +163,9 @@ header span.lastName {
 
 #lastName {
   display: inline-block;
-  color: #fff;
-  text-shadow: 1px 1px 0 #fff;
-  font-weight: 1 !important;
+  color: #3498db;
+  /* text-shadow: 1px 1px 0 #fff;
+  font-weight: 1 !important; */
   font-size: 2em;
   text-transform: uppercase;
   line-height: 0.9em;
