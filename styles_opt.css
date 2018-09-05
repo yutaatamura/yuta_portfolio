@@ -1,676 +1,682 @@
-    header {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    text-align:center;
-    background:#1B242F;
-    z-index:100;
-    animation-name:dropHeader;
-    animation-iteration-count:1;
-    animation-timing-function:ease;
-    animation-duration:.75s;
-    }
-    
-    header ul {
-    display:inline-block;
-    background:#fff;
-    text-align:center;
-    border-bottom-right-radius:4px;
-    border-bottom-left-radius:4px;
-    margin:0;
-    padding:10px;
-    }
-    
-    header li {
-    display:inline-block;
-    }
-    
-    header a {
-    display:block;
-    color:#FFF;
-    border-radius:3px;
-    margin-right:10px;
-    padding:10px;
-    }
-    
-    header a:hover {
-    color:#217dbb;
-    text-decoration:none;
-    border-radius:4px;
-    transition:all 0.3s ease-in-out;
-    }
-    
-    header a:focus {
-    color:#3498db;
-    text-decoration:none;
-    }
-    
-    header.active {
-    display:block;
-    }
-    
-    header.sticky {
-    position:fixed;
-    z-index:999;
-    }
-    
-    header li.name {
-    color:#38b0ff;
-    font-size:20px;
-    font-family: 'Raleway', sans-serif;
-    padding:13px 0;
-    }
-    
-    header span.firstName {
-    font-size:25px;
-    font-weight:800;
-    color:#e8e8e8;
-    }
-    
-    header span.lastName {
-    font-size:25px;
-    font-weight:500;
-    }
- 
-    #logo {
-    width: 50px;
-    height: 50px;
-    }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #1b242f;
+  z-index: 100;
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 0.75s;
+}
 
-    .myLogo {
-    position: relative;
-    left: 18px;
-    }
-    
-    .headings {
-    text-align:center;
-    position:relative;
-    display:inline-block;
-    font-size:2em;
-    font-weight:700;
-    font-family: 'Raleway', sans-serif;
-    margin:0 0 40px;
-    }
-    
-    .headings:after {
-    position:absolute;
-    content:'';
-    top:100%;
-    height:1px;
-    width:50px;
-    left:0;
-    right:0;
-    background:#3498db;
-    margin:0 auto;
-    }
-    
-    .navbar {
-    background-color:#000;
-    }
-    
-    #left-navbar {
-    float:left;
-    display:flex;
-    align-items:center;
-    }
-    
-    #right-menu {
-    float:right;
-    font-family:'Raleway', sans-serif;
-    }
-    
-    #namePlate {
-    position:relative;
-    height:100vh;
-    min-height:500px;
-    max-height:1080px;
-    background-image: linear-gradient(rgba(25, 121, 145, 0.5), rgba(25,121,145,0.5)),url("./images/chessboard.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    overflow:hidden;
-    padding:15px;
-    }
-    
-    #namePlate-content {
-    position:absolute;
-    z-index:10;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    text-align:center;
-    }
-    
-    #namePlate-content h1,#namePlate-content h2 {
-    font-family: 'Raleway', sans-serif;
-    margin:0;
-    }
-    
-    #firstName {
-    display:inline-block;
-    color:#fff;
-    text-shadow:1px 1px 0 #FFF;
-    font-weight:900;
-    font-size:2em;
-    text-transform:uppercase;
-    line-height:.9em;
-    margin-right:15px;
-    }
+header ul {
+  display: inline-block;
+  background: #fff;
+  text-align: center;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin: 0;
+  padding: 10px;
+}
 
-    #lastName {
-    display:inline-block;
-    color:#fff;
-    text-shadow:1px 1px 0 #FFF;
-    font-weight:1!important;
-    font-size:2em;
-    text-transform:uppercase;
-    line-height:.9em;
-    }   
-    
-    #namePlate-content h2 {
-    color:#fff;
-    font-weight:500;
-    font-size:2.25em;
-    margin-bottom:15px;
-    }
+header li {
+  display: inline-block;
+}
 
-    #resumeLink {
-    font-family:'Raleway', sans-serif;
-    }
-    
-    .aboutHeaderRow {
-    text-align:center;
-    }
+header a {
+  display: block;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 10px;
+}
 
-    #about {
-    padding-top:25px;
-    }
-    
-    .aboutPic {
-    width:50%;
-    margin:auto;
-    }
-    
-    .aboutPic img {
-    border-radius:50%;
-    border:2px solid rgb(44,44,44);
-    margin:auto;
-    }
-    
-    .aboutText {
-    float:left;
-    width:36%;
-    max-width:500px;
-    font-size:16px;
-    line-height:23px;
-    text-align:left;
-    padding:70px 7%;
-    }
-    
-    #tagline {
-    width:100%;
-    height:100%;
-    background-color:#DEDECD;
-    border-top:1px solid #F4F5EE;
-    padding:77px 0 107px;
-    }
-    
-    #taglineWrapper {
-    width:94%;
-    max-width:900px;
-    font-size:28px;
-    color:#666;
-    text-align:center;
-    font-weight:300;
-    line-height:40px;
-    font-family: 'Raleway', sans-serif;
-    margin:0 auto;
-    }
+header a:hover {
+  color: #217dbb;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
 
-    #taglineWrapper span {
-    font-weight:700;
-    }
-    
-    #experience-timeline>div {
-    background:#fff;
-    margin-bottom:10px;
-    border:1px solid #dcd9d9;
-    padding:10px;
-    }
-    
-    #experience-timeline {
-    position:relative;
-    max-width:1000px;
-    margin:30px auto 0;
-    }
-    
-    #experience-timeline:before {
-    position:absolute;
-    content:'';
-    top:0;
-    bottom:0;
-    left:314px;
-    right:auto;
-    height:100%;
-    width:3px;
-    background:#3498db;
-    z-index:1;
-    }
-    
-    #experience-timeline:after {
-    position:absolute;
-    content:'';
-    width:3px;
-    height:40px;
-    background:linear-gradient(to bottom,#3498db,rgba(52,152,219,0));
-    top:100%;
-    left:314px;
-    }
-    
-    #aboutSection {
-    background-color:#f8f8f8;
-    color:#666;
-    text-align:center;
-    font-size:1.25rem;
-    font-weight:300;
-    line-height:1.5;
-    width:500px;
-    vertical-align:middle;
-    font-family:'Raleway', sans-serif;
-    /* outline: 2px solid #00B9AE; */
-    outline:2px solid rgba(25,121,145,0.5);
-    box-shadow:0 0 3pt 2pt rgba(25,121,145,0.5);
-    margin:0 auto;
-    padding:20px;
-    }
+header a:focus {
+  color: #3498db;
+  text-decoration: none;
+}
 
-    #aboutSection p {
-    text-align:left;
-    }
-    
-    #education {
-    overflow:hidden;
-    padding:0 70px;
-    }
-    
-    .foo {
-    font-weight:600;
-    }
-    
-    .vtimeline-content {
-    margin-left:350px;
-    background:#fff;
-    border:1px solid #e6e6e6;
-    border-radius:3px;
-    text-align:left;
-    padding:15px;
-    }
-    
-    .vtimeline-point {
-    position:relative;
-    display:block;
-    vertical-align:top;
-    margin-bottom:30px;
-    }
-    
-    .vtimeline-icon {
-    position:relative;
-    color:#fff;
-    width:50px;
-    height:50px;
-    background:#3498db;
-    border-radius:50%;
-    float:left;
-    z-index:99;
-    margin-left:280px;
-    }
-    
-    .vtimeline-icon i {
-    display:block;
-    font-size:2em;
-    margin-top:10px;
-    }
-    
-    .vtimeline-date {
-    width:260px;
-    text-align:right;
-    position:absolute;
-    left:0;
-    top:10px;
-    font-weight:300;
-    color:#374054;
-    }
+header.active {
+  display: block;
+}
 
-    #skills {
-    margin-top:-90px;
-    background-color:rgb(25, 121, 145);  
-    background-size:contain;
-    background-position:100% 100%;
-    background-repeat:no-repeat;
-    }
+header.sticky {
+  position: fixed;
+  z-index: 999;
+}
 
-    .skillsHeader {
-    margin-top:100px;
-    }
+header li.name {
+  color: #38b0ff;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  padding: 13px 0;
+}
 
-    .gray-font {
-    color:#f1e9e9;
-    }
+header span.firstName {
+  font-size: 25px;
+  font-weight: 800;
+  color: #e8e8e8;
+}
 
-    #skills-block {
-    font-family:'Raleway', sans-serif;
-    }
+header span.lastName {
+  font-size: 25px;
+  font-weight: 500;
+}
 
-    .skillsRow {
-    border-radius:6px;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    margin-bottom:50px;
-    }
-    
-    .skillsRow div {
-    display:inline-block;
-    padding:3px 20px;
-    font-family:'Raleway', sans-serif;
-    }
+#logo {
+  width: 50px;
+  height: 50px;
+}
 
-    .skillsHead {
-    border-bottom:1px solid #ddd;
-    margin-bottom:30px;
-    padding-bottom:20px;
-    margin-top:10px;
-    font-family:'Raleway', sans-serif;
-    }
-    
-    .skills-img {
-    width:100px;
-    height:auto;
-    vertical-align:middle;
-    padding:5px;
-    }
-    
-    .skills-img:hover {
-    transform:scale(1.1);
-    transition-duration:.1s;
-    }
-    
-    .frontEnd {
-    background-color:#f8f8f8;
-    }
+.myLogo {
+  position: relative;
+  left: 18px;
+}
 
-    .backEnd {
-    background-color:#f8f8f8;
-    }
+.headings {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 40px;
+}
 
-    #portfolio {
-    background-color:#f8f8f8;
-    text-align:center;
-    border-bottom:1px solid #dcd9d9;
-    font-family:'Raleway', sans-serif;
-    padding:6%;
-    }
+.headings:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  height: 1px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  background: #3498db;
+  margin: 0 auto;
+}
 
-    .project {
-    border-radius:6px;
-    height:100%;
-    }
+.navbar {
+  background-color: #000;
+}
 
-    .project-heading {
-    font-size:30px;
-    }
+#left-navbar {
+  float: left;
+  display: flex;
+  align-items: center;
+}
 
-    .project-body {
-    font-size:18px;
-    }
+#right-menu {
+  float: right;
+  font-family: "Raleway", sans-serif;
+}
 
-    .project-row {
-    margin-bottom:30px;
-    }
+#namePlate {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(25, 121, 145, 0.5),
+      rgba(25, 121, 145, 0.5)
+    ),
+    url("./images/chessboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 15px;
+}
 
-    .projectLink:hover {
-    background-color:rgb(219, 88, 88);
-    color:#FFF;
-    transition:all 0.3s ease-in-out;
-    text-decoration:none;
-    }
+#namePlate-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
 
-    #portfolio-grid {
-    margin-top:30px;
-    }
+#namePlate-content h1,
+#namePlate-content h2 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
 
-    #portfolio-grid > div > .col-md-6 {
-    padding:0!important;
-    }
-    
-    .description {
-    height:100%;
-    }
+#firstName {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 1px 1px 0 #fff;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  margin-right: 15px;
+}
 
-    .descrWrapper {
-    background-color:#f8f8f8;
-    padding: 0 10px;
-    }
-    
-    .descrBlock {
-    text-align:center;
-    font-size:22px;
-    line-height:25px;
-    margin-top:-45px;
-    }
-    
-    .chessPiece {
-    background-color:#f8f8f8;
-    width:112px;
-    height:96px;
-    text-align:center;
-    padding-top:16px;
-    border-radius:56px;
-    margin:0 auto;
-    }
-    
-    .chessPiece img {
-    width:73.2%;
-    max-width:82px;
-    }
-    
-    .descrTitle {
-    margin-top:10px;
-    font-size:20px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    font-family:'Raleway', sans-serif;
-    }
-    
-    .descrSummary {
-    margin-top:30px;
-    font-family:'Raleway', sans-serif;
-    height:100%;
-    }
-    
-    .divide {
-    width:50px;
-    border-bottom:1px solid #3498db;
-    margin:30px auto;
-    }
-    
-    .hovereffect {
-    width:100%;
-    height:100%;
-    float:left;
-    overflow:hidden;
-    position:relative;
-    text-align:center;
-    cursor:default;
-    background:rgba(25, 121, 145);
-    }
-    
-    .hovereffect .overlay {
-    width:100%;
-    height:100%;
-    position:absolute;
-    overflow:hidden;
-    top:0;
-    left:0;
-    }
+#lastName {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 1px 1px 0 #fff;
+  font-weight: 1 !important;
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+}
 
-    .overlay-body {
-    position:relative;
-    height:100%;
-    }
-    
-    .hovereffect img {
-    display:block;
-    position:relative;
-    max-width:none;
-    width:calc(100% + 20px);
-    -webkit-transition:opacity 0.35s, -webkit-transform 0.35s;
-    transition:opacity 0.35s, transform 0.35s;
-    -webkit-transform:translate3d(-10px,0,0);
-    transform:translate3d(-10px,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    }
-    
-    .hovereffect:hover img {
-    opacity:0.1;
-    filter:alpha(opacity=40);
-    -webkit-transform:translate3d(0,0,0);
-    transform:translate3d(0,0,0);
-    }
-    
-    .hovereffect h2 {
-    text-transform:uppercase;
-    color:#fff;
-    text-align:center;
-    position:relative;
-    font-size:17px;
-    overflow:hidden;
-    background-color:transparent;
-    padding:0.1em 0;
-    }
-    
-    .hovereffect h2:after {
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:2px;
-    background:#fff;
-    content:'';
-    -webkit-transition:-webkit-transform 0.35s;
-    transition:transform 0.35s;
-    -webkit-transform:translate3d(-100%,0,0);
-    transform:translate3d(-100%,0,0);
-    }
-    
-    .hovereffect:hover h2:after {
-    -webkit-transform:translate3d(0,0,0);
-    transform:translate3d(0,0,0);
-    }
-    
-    .hovereffect a, .hovereffect p {
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition:opacity 0.35s, -webkit-transform 0.35s;
-    transition:opacity 0.35s, transform 0.35s;
-    -webkit-transform:translate3d(100%,0,0);
-    transform:translate3d(100%,0,0);
-    }
+#namePlate-content h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.25em;
+  margin-bottom: 15px;
+}
 
-    .hovereffect a {
-    border:solid red 2px;
-    font-family:'Raleway', sans-serif;
-    padding:10px;
-    }
+#resumeLink {
+  font-family: "Raleway", sans-serif;
+}
 
-    .hovereffect p {
-    font-weight:800;
-    font-size:30px;
-    color:#fff;
-    font-family:'Raleway', sans-serif;
-    }
+.aboutHeaderRow {
+  text-align: center;
+}
 
-    .link-wrap {
-    position:absolute;
-    bottom:50%;
-    right:0;
-    left:0;
-    top:50%;
-    display:block;
-    }
-    
-    .hovereffect:hover a, .hovereffect:hover p {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    }
-    
-    #contact > div {
-    display:inline-block;
-    width:400px;
-    height:auto;
-    overflow-y:hidden;
-    text-align:center;
-    vertical-align:middle;
-    padding:25px 0;
-    }
-    
-    .contact-icons {
-    text-decoration:none;
-    transition:all .3s ease;
-    color:#3498db;
-    padding:20px;
-    }
-    
-    .contact-icons:hover {
-    color:#fff;
-    }
-    
-    footer {
-    position:relative;
-    width:100%;
-    height:600px;
-    text-align:center;
-    background-color:#2f3241;
-    }
-    
-    .copyright {
-    position:absolute;
-    width:100%;
-    color:#fff;
-    line-height:40px;
-    text-align:center;
-    bottom:0;
-    font-family:'Raleway', sans-serif;
-    }
-    
-    #footerTop {
-    padding-top:50px;
-    font-family:'Raleway', sans-serif;
-    }
+#about {
+  padding-top: 25px;
+}
 
-    #footerTop h3 {
-    font-family:'Raleway', sans-serif;
-    }
-    
-    #experience,#skills {
-    text-align:center;
-    border-bottom:1px solid #dcd9d9;
-    padding:50px 15px;
-    }
-    
-    .degree,.aboutDegree {
-    font-size:1rem;
-    }
+.aboutPic {
+  width: 50%;
+  margin: auto;
+}
 
-    @media (max-width: 640px) and (min-width: 320px){
-        /* For mobile phones: */
-    .descrBlock {
-    line-height:initial;
-    margin-top:10px;
-    padding:0 20%;
-    }
-    }
-    
+.aboutPic img {
+  border-radius: 50%;
+  border: 2px solid rgb(44, 44, 44);
+  margin: auto;
+}
+
+.aboutText {
+  float: left;
+  width: 36%;
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: left;
+  padding: 70px 7%;
+}
+
+#tagline {
+  width: 100%;
+  height: 100%;
+  background-color: #dedecd;
+  border-top: 1px solid #f4f5ee;
+  padding: 77px 0 107px;
+}
+
+#taglineWrapper {
+  width: 94%;
+  max-width: 900px;
+  font-size: 28px;
+  color: #666;
+  text-align: center;
+  font-weight: 300;
+  line-height: 40px;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+}
+
+#taglineWrapper span {
+  font-weight: 700;
+}
+
+#experience-timeline > div {
+  background: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #dcd9d9;
+  padding: 10px;
+}
+
+#experience-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+
+#experience-timeline:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 314px;
+  right: auto;
+  height: 100%;
+  width: 3px;
+  background: #3498db;
+  z-index: 1;
+}
+
+#experience-timeline:after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 40px;
+  background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+  top: 100%;
+  left: 314px;
+}
+
+#aboutSection {
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  width: 500px;
+  vertical-align: middle;
+  font-family: "Raleway", sans-serif;
+  /* outline: 2px solid #00B9AE; */
+  outline: 2px solid rgba(25, 121, 145, 0.5);
+  box-shadow: 0 0 3pt 2pt rgba(25, 121, 145, 0.5);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#aboutSection p {
+  text-align: left;
+}
+
+#education {
+  overflow: hidden;
+  padding: 0 70px;
+}
+
+.foo {
+  font-weight: 600;
+}
+
+.vtimeline-content {
+  margin-left: 350px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  text-align: left;
+  padding: 15px;
+}
+
+.vtimeline-point {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+  position: relative;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: #3498db;
+  border-radius: 50%;
+  float: left;
+  z-index: 99;
+  margin-left: 280px;
+}
+
+.vtimeline-icon i {
+  display: block;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.vtimeline-date {
+  width: 260px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-weight: 300;
+  color: #374054;
+}
+
+#skills {
+  margin-top: -90px;
+  background-color: rgb(25, 121, 145);
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.skillsHeader {
+  margin-top: 100px;
+}
+
+.gray-font {
+  color: #f1e9e9;
+}
+
+#skills-block {
+  font-family: "Raleway", sans-serif;
+}
+
+.skillsRow {
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 50px;
+}
+
+.skillsRow div {
+  display: inline-block;
+  padding: 3px 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.skillsHead {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.skills-img {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.skills-img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+.frontEnd {
+  background-color: #f8f8f8;
+}
+
+.backEnd {
+  background-color: #f8f8f8;
+}
+
+#portfolio {
+  background-color: #f8f8f8;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+  font-family: "Raleway", sans-serif;
+  padding: 6%;
+}
+
+.project {
+  border-radius: 6px;
+  height: 100%;
+}
+
+.project-heading {
+  font-size: 30px;
+}
+
+.project-body {
+  font-size: 18px;
+}
+
+.project-row {
+  margin-bottom: 30px;
+}
+
+.projectLink:hover {
+  background-color: rgb(219, 88, 88);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#portfolio-grid {
+  margin-top: 30px;
+}
+
+#portfolio-grid > div > .col-md-6 {
+  padding: 0 !important;
+}
+
+.description {
+  height: 100%;
+}
+
+.descrWrapper {
+  background-color: #f8f8f8;
+  padding: 0 10px;
+}
+
+.descrBlock {
+  text-align: center;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: -45px;
+}
+
+.chessPiece {
+  background-color: #f8f8f8;
+  width: 112px;
+  height: 96px;
+  text-align: center;
+  padding-top: 16px;
+  border-radius: 56px;
+  margin: 0 auto;
+}
+
+.chessPiece img {
+  width: 73.2%;
+  max-width: 82px;
+}
+
+.descrTitle {
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+}
+
+.descrSummary {
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+.divide {
+  width: 50px;
+  border-bottom: 1px solid #3498db;
+  margin: 30px auto;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: rgba(25, 121, 145);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.overlay-body {
+  position: relative;
+  height: 100%;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0.1em 0;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect a {
+  border: solid red 2px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+
+.hovereffect p {
+  font-weight: 800;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.link-wrap {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  left: 0;
+  top: 50%;
+  display: block;
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#contact > div {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  overflow-y: hidden;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px 0;
+}
+
+.contact-icons {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #3498db;
+  padding: 20px;
+}
+
+.contact-icons:hover {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  background-color: #2f3241;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  bottom: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+#footerTop {
+  padding-top: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+#footerTop h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+#experience,
+#skills {
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+  padding: 50px 15px;
+}
+
+.degree,
+.aboutDegree {
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+  /* For mobile phones: */
+  .descrBlock {
+    line-height: initial;
+    margin-top: 10px;
+    padding: 0 20%;
+  }
+}
