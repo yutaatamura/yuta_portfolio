@@ -430,6 +430,10 @@ header span.lastName {
   margin-bottom: 30px;
 }
 
+.projectLink {
+  background-color: white;
+}
+
 .projectLink:hover {
   background-color: rgb(219, 88, 88);
   color: #fff;
